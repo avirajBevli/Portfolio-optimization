@@ -132,8 +132,9 @@ def MV2(assets): #assets is a list of dict
 	# os.chdir("..") #cd changed from backend to Alpha_TermProject
 	path = os.path.abspath(os.curdir)
 	print("path: ", path)
-	path = go_to_parent(path)
-	path+="/TermProject/data_files/Data_reqd/Data/"
+	#path = go_to_parent(path)
+	#path+="/TermProject/data_files/Data_reqd/Data/"
+	path+="/data_files/Data_reqd/Data/"
 	print("path: ", path)
 	#print("type: ", type(path))
 
