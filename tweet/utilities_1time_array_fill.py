@@ -20,7 +20,7 @@ import time
 nltk.download('vader_lexicon') #required for Sentiment Analysis
 
 
-sys.path.append('/Users/avirajbevli/Desktop/Alpha_TermProject/backend')
+sys.path.append('/Users/avirajbevli/Desktop/TermProject/backend')
 os.environ['DJANGO_SETTINGS_MODULE'] = 'backend.settings'
 django.setup()
 
@@ -60,7 +60,7 @@ def find_prev_50_sents():
 os.chdir("..") #cd changed from asset to backend
 os.chdir("..") #cd changed from backend to Alpha_TermProject
 path = os.path.abspath(os.curdir)
-path+="/backend/staticfiles/Data_reqd/results/sent_arr50.npy"
+path+="/TermProject/data_files/Data_reqd/results/sent_arr50.npy"
 print("path: ", path)
 sent_arr50 = find_prev_50_sents()
 with open(path, 'wb') as f:

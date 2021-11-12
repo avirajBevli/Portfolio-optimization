@@ -160,7 +160,7 @@ def update_daily_sentiment():
 	path = go_to_parent(path)
 	path = go_to_parent(path)
 	print("path: ", path) #/Users/avirajbevli/Desktop/Alpha_TermProject/backend/tweet
-	path += '/backend/staticfiles/Data_reqd/results/sent_arr50.npy'
+	path += '/TermProject/data_files/Data_reqd/results/sent_arr50.npy'
 	with open(path, 'rb') as f:
 	    sent_arr50 = np.load(f)
 	print("shape: ", sent_arr50.shape)

@@ -17,7 +17,7 @@ def calculate_delta_sentiment():
 	import os
 	import django
 	import numpy as np
-	sys.path.append('/Users/avirajbevli/Desktop/Alpha_TermProject/backend')
+	sys.path.append('/Users/avirajbevli/Desktop/TermProject/backend')
 	os.environ['DJANGO_SETTINGS_MODULE'] = 'backend.settings'
 	django.setup()
 	# ################
@@ -26,7 +26,7 @@ def calculate_delta_sentiment():
 	path = os.path.abspath(os.curdir)
 	# print("path: ", path) # /Users/avirajbevli/Desktop/Alpha_TermProject/backend
 	path = go_to_parent(path) #backend to Alpha_TermProject
-	path += '/backend/staticfiles/Data_reqd/results/sent_arr50.npy'
+	path += '/TermProject/data_files/Data_reqd/results/sent_arr50.npy'
 
 	print("-++++++++++++++++++++++++++++++______________+++++++++++++")
 	print("path: ", path)
@@ -73,7 +73,7 @@ def MV2(assets): #assets is a list of dict
 	import sys
 	import os
 	import django
-	sys.path.append('/Users/avirajbevli/Desktop/Alpha_TermProject/backend')
+	sys.path.append('/Users/avirajbevli/Desktop/TermProject/backend')
 	os.environ['DJANGO_SETTINGS_MODULE'] = 'backend.settings'
 	django.setup()
 	################
@@ -132,7 +132,7 @@ def MV2(assets): #assets is a list of dict
 	path = os.path.abspath(os.curdir)
 	print("path: ", path)
 	path = go_to_parent(path)
-	path+="/backend/staticfiles/Data_reqd/Data/"
+	path+="/TermProject/data_files/Data_reqd/Data/"
 	print("path: ", path)
 	#print("type: ", type(path))
 

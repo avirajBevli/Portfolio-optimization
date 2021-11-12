@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f1cq@qdgv18f+5+iv^z#96yc4i3q44($&svqm$#lk4cq861vc$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False # for heroku
+DEBUG = True # for heroku
 
 #ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['127.0.0.1', 'alpha-portfolio-solutions.herokuapp.com'] #added manually
@@ -105,7 +105,7 @@ DATABASES = {
 }
 
 # Added manually
-#WHITENOISE_USE_FINDERS = True
+# WHITENOISE_USE_FINDERS = True
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -142,7 +142,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_collection')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -150,7 +150,8 @@ STATICFILES_DIRS = [
     # '/var/www/static/',
 ]
 
+
 # added manually
 # db_from_env = dj_database_url.config(conn_max_age=500)
 # DATABASES['default'].update(db_from_env)
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
