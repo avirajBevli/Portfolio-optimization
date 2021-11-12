@@ -26,7 +26,7 @@ def calculate_delta_sentiment():
 	path = os.path.abspath(os.curdir)
 	# print("path: ", path) # /Users/avirajbevli/Desktop/Alpha_TermProject/backend
 	path = go_to_parent(path) #backend to Alpha_TermProject
-	path += '/Data_reqd/results/sent_arr50.npy'
+	path += '/backend/staticfiles/Data_reqd/results/sent_arr50.npy'
 
 	print("-++++++++++++++++++++++++++++++______________+++++++++++++")
 	print("path: ", path)
@@ -132,7 +132,7 @@ def MV2(assets): #assets is a list of dict
 	path = os.path.abspath(os.curdir)
 	print("path: ", path)
 	path = go_to_parent(path)
-	path+="/Data_reqd/Data/"
+	path+="/backend/staticfiles/Data_reqd/Data/"
 	print("path: ", path)
 	#print("type: ", type(path))
 

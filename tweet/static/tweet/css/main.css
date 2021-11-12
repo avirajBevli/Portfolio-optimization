@@ -6,6 +6,9 @@ body {
 
 .header {
     background-image: url("../images/abstract.jpg");
+	/* background-image: url("https://i.ibb.co/479bZ1K/abstract.jpg"); */
+	/*<a href="https://ibb.co/BtdhVnc"><img src="https://i.ibb.co/479bZ1K/abstract.jpg" alt="abstract" border="0"></a><br /><a target='_blank' href='https://nonprofitlight.com/ks/manhattan/pawnee-mental-health-services-inc'>pawnee mental health</a><br />*/
+	/* background-image: url("/backend/tweet/static/tweet/images/math.jpg"); */
     background-size: cover;
     background-position: center;
     position: relative;

@@ -18,7 +18,7 @@ def go_to_parent(path):
 path = os.path.abspath(os.curdir)
 path = go_to_parent(path)
 path = go_to_parent(path)
-path+="/Data_reqd/Data/"
+path+="/backend/staticfiles/Data_reqd/Data/"
 print("path: ", path)
 #print("type: ", type(path))
 
@@ -81,9 +81,9 @@ path = os.path.abspath(os.curdir)
 path = go_to_parent(path)
 path = go_to_parent(path)
 path1 = path
-path1 += '/Data_reqd/results/cov.pkl'
+path1 += '/backend/staticfiles/Data_reqd/results/cov.pkl'
 path2 = path
-path2 += '/Data_reqd/results/cov_inv.pkl'
+path2 += '/backend/staticfiles/Data_reqd/results/cov_inv.pkl'
 # cov.to_pickle("Data_reqd/results/cov.pkl")
 # cov_inv.to_pickle("Data_reqd/results/cov_inv.pkl")
 
@@ -96,7 +96,7 @@ print("!!!!!!!!!!!!!expected_risks: ", expected_risks)
 
 # expected_returns.to_pickle("Data_reqd/results/expected_returns.pkl")
 # expected_risks.to_pickle("Data_reqd/results/expected_risks.pkl")
-path += '/Data_reqd/results/expected_returns_risks.npy'
+path += '/backend/staticfiles/Data_reqd/results/expected_returns_risks.npy'
 with open(path, 'wb') as f:
     np.save(f, expected_returns)
     np.save(f, expected_risks)

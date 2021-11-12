@@ -24,16 +24,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f1cq@qdgv18f+5+iv^z#96yc4i3q44($&svqm$#lk4cq861vc$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False # for heroku
+DEBUG = True # for heroku
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com'] #added manually
+# ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com'] #added manually
 
 # Application definition
 
 INSTALLED_APPS = [
     # added manually
-    'whitenoise.runserver_nostatic',
+    # 'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
 
     'django.contrib.admin',
@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     # added manually
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
 
     #'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -97,15 +97,15 @@ DATABASES = {
 
         # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
         # 'NAME': '<database_name>',
-        'USER': 'avirajbevli',
-        'PASSWORD': 'aviraj@heroku123#',
-        'HOST': 'localhost',
-        'PORT': '',
+        # 'USER': 'avirajbevli',
+        # 'PASSWORD': 'aviraj@heroku123#',
+        # 'HOST': 'localhost',
+        # 'PORT': '',
     }
 }
 
 # Added manually
-WHITENOISE_USE_FINDERS = True
+#WHITENOISE_USE_FINDERS = True
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -145,12 +145,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "static"),
+#     '/var/www/static/',
+# ]
 
 # added manually
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
