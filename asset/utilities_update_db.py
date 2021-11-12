@@ -16,10 +16,11 @@ def go_to_parent(path):
 # os.chdir("..") #cd changed from asset to backend
 # os.chdir("..") #cd changed from backend to Alpha_TermProject
 path = os.path.abspath(os.curdir)
-path = go_to_parent(path)
-path = go_to_parent(path)
-path+="/TermProject/data_files/Data_reqd/Data/"
-print("path: ", path)
+# path = go_to_parent(path)
+# path = go_to_parent(path)
+# path+="/TermProject/data_files/Data_reqd/Data/"
+path+="/data_files/Data_reqd/Data/"
+print("---------------------------                ............. path: ", path)
 #print("type: ", type(path))
 
 csv_files = glob.glob(os.path.join(path, "*.csv"))
@@ -78,12 +79,15 @@ print(cov_inv.head())
 print(cov_inv.shape)
 
 path = os.path.abspath(os.curdir)
-path = go_to_parent(path)
-path = go_to_parent(path)
+# path = go_to_parent(path)
+# path = go_to_parent(path)
 path1 = path
-path1 += '/TermProject/data_files/Data_reqd/results/cov.pkl'
+path1 += '/data_files/Data_reqd/results/cov.pkl'
+# path1 += '/TermProject/data_files/Data_reqd/results/cov.pkl'
 path2 = path
-path2 += '/TermProject/data_files/Data_reqd/results/cov_inv.pkl'
+path2 += '/data_files/Data_reqd/results/cov_inv.pkl'
+#path2 += '/TermProject/data_files/Data_reqd/results/cov_inv.pkl'
+
 # cov.to_pickle("Data_reqd/results/cov.pkl")
 # cov_inv.to_pickle("Data_reqd/results/cov_inv.pkl")
 
@@ -96,7 +100,8 @@ print("!!!!!!!!!!!!!expected_risks: ", expected_risks)
 
 # expected_returns.to_pickle("Data_reqd/results/expected_returns.pkl")
 # expected_risks.to_pickle("Data_reqd/results/expected_risks.pkl")
-path += '/TermProject/data_files/Data_reqd/results/expected_returns_risks.npy'
+# path += '/TermProject/data_files/Data_reqd/results/expected_returns_risks.npy'
+path += '/data_files/Data_reqd/results/expected_returns_risks.npy'
 with open(path, 'wb') as f:
     np.save(f, expected_returns)
     np.save(f, expected_risks)

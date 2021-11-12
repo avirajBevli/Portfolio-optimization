@@ -57,10 +57,10 @@ def find_prev_50_sents():
 # print("type: ", type(sent_arr)) #type:  <class 'numpy.ndarray'>
 # print("shape: ", sent_arr.shape) #(50,1)
 
-os.chdir("..") #cd changed from asset to backend
-os.chdir("..") #cd changed from backend to Alpha_TermProject
+# os.chdir("..") #cd changed from asset to backend
+# os.chdir("..") #cd changed from backend to Alpha_TermProject
 path = os.path.abspath(os.curdir)
-path+="/TermProject/data_files/Data_reqd/results/sent_arr50.npy"
+path+="/data_files/Data_reqd/results/sent_arr50.npy"
 print("path: ", path)
 sent_arr50 = find_prev_50_sents()
 with open(path, 'wb') as f:

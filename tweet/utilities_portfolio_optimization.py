@@ -24,9 +24,10 @@ def calculate_delta_sentiment():
 	# os.chdir("..") #cd changed from asset to backend
 	# os.chdir("..") #cd changed from backend to Alpha_TermProject
 	path = os.path.abspath(os.curdir)
+	print("path: ", path)
 	# print("path: ", path) # /Users/avirajbevli/Desktop/Alpha_TermProject/backend
-	path = go_to_parent(path) #backend to Alpha_TermProject
-	path += '/TermProject/data_files/Data_reqd/results/sent_arr50.npy'
+	# path = go_to_parent(path) #backend to Alpha_TermProject
+	path += '/data_files/Data_reqd/results/sent_arr50.npy'
 
 	print("-++++++++++++++++++++++++++++++______________+++++++++++++")
 	print("path: ", path)

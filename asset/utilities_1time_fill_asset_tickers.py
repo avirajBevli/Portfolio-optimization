@@ -23,10 +23,12 @@ def go_to_parent(path):
 	return path_par	
 
 
+# path = os.path.abspath(os.curdir)
+# path = go_to_parent(path)
+# path = go_to_parent(path)
+# path+="/TermProject/data_files/Data_reqd/Equity.csv"
 path = os.path.abspath(os.curdir)
-path = go_to_parent(path)
-path = go_to_parent(path)
-path+="/TermProject/data_files/Data_reqd/Equity.csv"
+path+="/data_files/Data_reqd/Equity.csv"
 print("path: ", path)
 #print("type: ", type(path))
 
