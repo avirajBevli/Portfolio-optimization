@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Calculated portfolio according to tweet_sentiment_MA correction on Rupees 10,000 :</h1>
+{% comment %} <h2>{{portfolio}}</h2> {% endcomment %}
+<table>
+{% for asset in portfolio %}
+    <h4>{{ asset.asset }} : Rupees {{ asset.amount }}</h4>
+{% endfor %}
+</table>
+<h3>Total expected return: Rupees {{exp_return}}</h3>
+<h3>Total expected risk: {{exp_risk}}</h3>
+</body>
+</html>
