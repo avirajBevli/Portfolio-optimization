@@ -24,10 +24,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f1cq@qdgv18f+5+iv^z#96yc4i3q44($&svqm$#lk4cq861vc$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True # for heroku
+DEBUG = False # for heroku
 
 #ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com'] #added manually
+ALLOWED_HOSTS = ['127.0.0.1', 'alpha-portfolio-solutions.herokuapp.com'] #added manually
 
 # Application definition
 
@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     # added manually
     'django.middleware.security.SecurityMiddleware',
-    #'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 
     #'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -142,13 +142,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_collection')
 STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static"),
-#     '/var/www/static/',
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    # '/var/www/static/',
+]
 
 # added manually
 # db_from_env = dj_database_url.config(conn_max_age=500)
