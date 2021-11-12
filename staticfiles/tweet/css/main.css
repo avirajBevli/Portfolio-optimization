@@ -1,0 +1,74 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+
+.header {
+    background-image: url("../images/abstract.jpg");
+	/* background-image: url("https://i.ibb.co/479bZ1K/abstract.jpg"); */
+	/*<a href="https://ibb.co/BtdhVnc"><img src="https://i.ibb.co/479bZ1K/abstract.jpg" alt="abstract" border="0"></a><br /><a target='_blank' href='https://nonprofitlight.com/ks/manhattan/pawnee-mental-health-services-inc'>pawnee mental health</a><br />*/
+	/* background-image: url("/backend/tweet/static/tweet/images/math.jpg"); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.description h1 {
+	color: #6ab446;
+	font-size: 6rem;
+}
+.description p {
+	color: #fff;
+	font-size: 2.5rem;
+	line-height: 1.5;
+}
+
+.description button {
+    border:1px solid #6ab446;
+    background:#6ab446;
+    border-radius: 0;
+    color:#fff;
+}
+.description button:hover {
+	border:1px solid #fff;
+    background:#fff;
+    color:#000;
+}
+
+.features {
+	margin: 4em auto;
+	padding: 1em;
+	position: relative;
+}
+
+.feature-title {
+	color: #333;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.features img {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
