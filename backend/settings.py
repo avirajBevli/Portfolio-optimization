@@ -18,16 +18,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Added manually to make secret key "SECRET"
-from configparser import RawConfigParser
-config = RawConfigParser()
-config.read(os.path.dirname(BASE_DIR) + "/private_settings.ini")
-SECRET_KEY = config.get('secrets', 'SECRET_KEY')
+# from configparser import RawConfigParser
+# config = RawConfigParser()
+# config.read(os.path.dirname(BASE_DIR) + "/private_settings.ini")
+# SECRET_KEY = config.get('secrets', 'SECRET_KEY')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = '**********************************' 
+SECRET_KEY = '**********************************' 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False # for heroku
